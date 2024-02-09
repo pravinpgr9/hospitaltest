@@ -1,0 +1,11 @@
+Searching 134 files for " HEADER_TEXTCOLOR"
+
+/Applications/MAMP/htdocs/wordpress1/wp-content/themes/karuna/inc/custom-header.php:
+   54
+   55  	// If no custom options for text are set, let's bail
+   56: 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value.
+   57: 	if ( HEADER_TEXTCOLOR == $header_text_color ) {
+   58  		return;
+   59  	}
+
+2 matches in 1 file

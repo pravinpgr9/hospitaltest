@@ -1,0 +1,160 @@
+/*
+Theme Name: Medical Care Unit
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+https://codex.wordpress.org/Right-to-Left_Language_Support
+*/
+.theme-loading {
+  left: 0;
+  position: absolute;
+}
+
+.right-sidebar .content-area #site-content {
+  padding-left: 10%;
+  padding-right: 0;
+}
+
+.left-sidebar .content-area #site-content {
+  padding-right: 10%;
+  padding-left: 0;
+}
+
+.right-sidebar .widget-area-wrapper {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+.right-sidebar .widget-area-wrapper .widget {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.left-sidebar .widget-area-wrapper {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+.left-sidebar .widget-area-wrapper .widget {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.theme-main-carousel .swiper-button-prev svg,
+.theme-main-carousel .swiper-button-next svg,
+.theme-btn-link svg {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media (min-width: 992px) {
+  .right-sidebar .widget-area-wrapper .widget-title,
+  .right-sidebar
+    .widget-area-wrapper
+    .widget_block
+    .wp-block-group
+    > .wp-block-group__inner-container
+    > h2 {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -4rem;
+    padding-right: 4rem;
+  }
+}
+
+.theme-carousel-control {
+  margin-left: 0;
+}
+
+.site-navigation .primary-menu ul li.menu-item-has-children:hover > ul,
+.site-navigation .primary-menu ul li.menu-item-has-children:focus > ul,
+.site-navigation .primary-menu ul li.page_item_has_children:hover > ul,
+.site-navigation .primary-menu ul li.page_item_has_children:focus > ul {
+  left: inherit;
+  right: calc(100% + 2rem);
+}
+
+.site-navigation .primary-menu ul ul::before {
+  left: inherit;
+  right: -2rem;
+}
+
+.site-navigation .primary-menu ul ul::after {
+  left: inherit;
+  right: -1.6rem;
+}
+
+.site-navigation .primary-menu ul li.menu-item-has-children .icon {
+  right: inherit;
+  left: 1.5rem;
+}
+
+.site-navigation .primary-menu ul {
+  left: inherit;
+  right: -99999rem;
+}
+
+.site-navigation .primary-menu li.menu-item-has-children:hover > ul,
+.site-navigation .primary-menu li.menu-item-has-children:focus > ul,
+.site-navigation .primary-menu li.page_item_has_children:hover > ul,
+.site-navigation .primary-menu li.page_item_has_children:focus > ul {
+  right: 0;
+}
+
+.site-navigation .primary-menu .megamenu-subcategories .icon {
+  transform: rotate(180deg);
+}
+
+.theme-animated-line::before {
+  top: inherit;
+  right: 0;
+}
+
+@keyframes animate {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 100%;
+  }
+  0% {
+    right: 0;
+  }
+}
+@media (max-width: 991px) {
+  @keyframes animate {
+    0% {
+      right: 0;
+    }
+    50% {
+      right: 67%;
+    }
+    0% {
+      right: 0;
+    }
+  }
+}
+
+.entry-meta .cat-links a {
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.entry-meta .cat-links a::before,
+.entry-meta-item::before {
+  left: 0;
+  right: inherit;
+}
+
+.entry-meta .entry-meta-item {
+  margin: 0 0 1rem 1rem;
+  padding-left: 1.5rem;
+  padding-right: 0;
+}
+
+.post-navigation .nav-next .arrow {
+    transform: rotate(180deg);
+    margin: 0 2rem 0 0;
+}

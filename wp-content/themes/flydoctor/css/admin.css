@@ -1,0 +1,23 @@
+.fw-checkbox-float-left div {
+    float: left;
+    margin-right: 15px;
+}
+
+#edittag .fw-option.fw-option-type-multi-picker .fw-backend-option-desc .fw-inner {
+    margin-left: 120px;
+}
+
+#edittag #fw-backend-options-group-blog_header_type-image .fw-backend-option-desc .fw-inner,
+#edittag #fw-backend-option-fw-option-blog_header_type-slider .fw-backend-option-desc .fw-inner,
+#edittag #fw-backend-option-fw-option-portfolios_header_type-image-img .fw-backend-option-desc .fw-inner,
+#edittag #fw-backend-options-group-classes_header_type-image .fw-backend-option-desc .fw-inner,
+#edittag #fw-backend-option-fw-option-classes_header_type-slider .fw-backend-option-desc .fw-inner {
+    margin-left: 122px !important;
+}
+
+@media (min-width: 1025px) {
+    #edittag > .fw-backend-option > .fw-backend-option-input .fw-backend-option-input.fw-backend-option-input-type-multi {
+        width: 100% !important;
+    }
+}
+
